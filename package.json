@@ -1,6 +1,6 @@
 {
   "name": "rackspace-ews-auth",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tiny authentication provider for checking login credentials against Rackspace hosted exchange accounts",
   "author": "Alan Pich <alan@orangutanstudio.com>",
   "license": "BSD-2-Clause",

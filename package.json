@@ -1,0 +1,29 @@
+{
+  "name": "rackspace-ews-auth",
+  "version": "0.0.4",
+  "description": "Tiny authentication provider for checking login credentials against Rackspace hosted exchange accounts",
+  "author": "Alan Pich <alan@orangutanstudio.com>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alanpich/node-rackspace-ews-auth"
+  },
+  "bugs": {
+    "url": "https://github.com/alanpich/node-rackspace-ews-auth/issues"
+  },
+  "keywords": [
+    "rackspace",
+    "ews",
+    "exchange",
+    "owa",
+    "auth"
+  ],
+  "main": "index",
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "curlrequest": "~0.3.10"
+  }
+}

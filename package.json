@@ -25,5 +25,9 @@
   },
   "dependencies": {
     "curlrequest": "~0.3.10"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.6.0"
   }
 }

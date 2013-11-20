@@ -7,6 +7,7 @@ Lightweight authentication against a Rackspace hosted Microsoft Exchange account
 $ npm install --save rackspace-ews-auth
 ````
 
+
 ## Getting Started
 ````js
 var rackspace = require('rackspace-ews-auth')

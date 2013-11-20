@@ -9,9 +9,11 @@ $ npm install --save rackspace-ews-auth
 
 ## Getting Started
 ````js
-var rackspace = require('rackspace-ews-auth');
+var rackspace = require('rackspace-ews-auth')
+    , user: 'alan@example.com'
+    , password: 'password123';
 
-rackspace.authenticate(myUsername,myPassword,function(success,err){
+rackspace.authenticate(user,password,function(success,err){
     if(success){
         // woohoo!
     } else {

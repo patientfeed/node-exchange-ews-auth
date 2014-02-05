@@ -1,18 +1,20 @@
 var   curl = require('curlrequest')
-    , url = "https://connect.emailsrvr.com/EWS/Exchange.asmx"
     , domain = '/';
 
 
 function handleResponse(err,stdout,meta){
     var responseCode = parseInt(stdout);
+	console.log(stdout);
     return (!err && responseCode == 200);
 }
 
 
 module.exports = {
 
-    authenticate: function(username,password,cb){
+    authenticate: function(server,username,password,cb){
 
+    	var url = "https://" + server + "/EWS/Exchange.asmx";
+		console.log(url);
         // Bind a context for callback
         var responseHandler = function(cb){return function(err,stdout,meta){
             var success = handleResponse(err,stdout,meta);
@@ -25,7 +27,8 @@ module.exports = {
             'write-out': '%{http_code}\n',
             head: true,
             'output': '/dev/null',
-            user: username+':'+password
+            user: username+':'+password,
+			ntlm: true
         },responseHandler);
 
     }
